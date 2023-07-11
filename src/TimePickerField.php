@@ -34,9 +34,6 @@ class TimePickerField extends TimeField
              ->setAttribute('autocomplete', 'off')
              ->setAttribute('data-jqueryuiconfig', json_encode($this->timePickerConfig));
 
-        Requirements::javascript('silverstripe/admin: client/dist/js/vendor.js');
-        Requirements::javascript('silverstripe/admin: thirdparty/jquery-ui/jquery-ui.js');
-
         Requirements::javascript('silverstripe/timepickerfield:client/javascript/jquery.ui.timepicker.js');
         Requirements::javascript('silverstripe/timepickerfield:client/javascript/timepickerfield.js');
         Requirements::css('silverstripe/timepickerfield:client/css/jquery.ui.timepicker.css');
